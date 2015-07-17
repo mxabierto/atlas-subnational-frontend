@@ -15,7 +15,7 @@ export default Ember.Route.extend({
     }
   },
   model: function(transition) {
-    var departments = this.store.find('location', {level: 'department'});
+    var departments = this.store.find('location', {level: 'state'});
     var municipalities = this.store.find('location', {level: 'municipality'});
     var products = this.store.find('product', { level: '4digit' });
 
