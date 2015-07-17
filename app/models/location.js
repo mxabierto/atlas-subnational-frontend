@@ -30,10 +30,10 @@ export default DS.Model.extend({
     var products = $.getJSON(`${apiURL}/data/products?location=${this.get('id')}`);
     var productsData = $.getJSON(`${apiURL}/data/products/scatterplot?location=${this.get('id')}`);
     var defaultParams = {
-      treemap: { variable: 'export_value', startDate: 2007, endDate: 2013 },
-      multiples: { variable: 'export_value', startDate: 2007, endDate: 2013 },
-      scatter: { variauble: null,  startDate: 2012, endDate: 2013 },
-      similarty: { variauble: null,  startDate: 2012, endDate: 2013 }
+      treemap: { variable: 'export_value', startDate: 2009, endDate: 2013 },
+      multiples: { variable: 'export_value', startDate: 2009, endDate: 2013 },
+      scatter: { variauble: null,  startDate: 2013, endDate: 2014 },
+      similarty: { variauble: null,  startDate: 2013, endDate: 2014 }
     };
     return Ember.RSVP.all([products, productsData])
       .then((array) => {
@@ -59,10 +59,10 @@ export default DS.Model.extend({
     var industries = $.getJSON(`${apiURL}/data/industries?location=${this.get('id')}`);
     var industriesData = $.getJSON(`${apiURL}/data/industries/scatterplot?location=${this.get('id')}`);
     var defaultParams = {
-      treemap: { variable: 'wages', startDate: 2007, endDate: 2013 },
-      multiples: { variable: 'wages', startDate: 2007, endDate: 2013 },
-      scatter: { variauble: null,  startDate: 2012, endDate: 2013 },
-      similarty: { variauble: null,  startDate: 2012, endDate: 2013 }
+      treemap: { variable: 'wages', startDate: 2009, endDate: 2013 },
+      multiples: { variable: 'wages', startDate: 2009, endDate: 2013 },
+      scatter: { variauble: null,  startDate: 2013, endDate: 2014 },
+      similarty: { variauble: null,  startDate: 2013, endDate: 2014 }
     };
     return Ember.RSVP.all([industries, industriesData])
       .then((array) => {
