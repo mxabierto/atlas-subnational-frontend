@@ -17,6 +17,7 @@ export default {
     'graph_builder_link': 'Graph Builder'
   },
   'location.model':{
+    'state' : 'state',
     'department': 'department',
     'municipality': 'municipality',
     'population_center': 'population center'
