@@ -39,8 +39,8 @@ export default DS.Model.extend({
       treemap: { variable: 'export_value', startDate: 2009, endDate: 2013 },
       multiples: { variable: 'export_value', startDate: 2009, endDate: 2013 },
       geo: { variable: 'export_value', startDate: 2013, endDate: 2014 },
-      scatter: { variauble: null,  startDate: 2013, endDate: 2014 },
-      similarty: { variauble: null,  startDate: 2013, endDate: 2014 }
+      scatter: { variable: null,  startDate: 2012, endDate: 2013 },
+      similarty: { variable: null,  startDate: 2012, endDate: 2013 }
     };
     return Ember.RSVP.all([locations])
       .then((array) => {

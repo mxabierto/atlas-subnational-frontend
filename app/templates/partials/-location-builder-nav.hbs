@@ -186,7 +186,7 @@
               <i class="icon-cidcon_scatter builder__nav__item__icon"></i>
               <div class="builder__nav__item__textwrap">
                 <h4 class="label builder__nav__label">Scatterplot</h4>
-                {{#link-to 'visualization' entity_and_id 'products' 'scatter' (query-params variable='null' endDate=2014 startDate=2013) class="builder__nav__question"}}
+                {{#link-to 'visualization' entity_and_id 'products' 'scatter' (query-params variable='null' endDate=2013 startDate=2012) class="builder__nav__question"}}
                   {{t 'graph_builder.builder_nav.location.products.scatter' name=name}}
                 {{/link-to}}
               </div>
@@ -195,7 +195,7 @@
               <i class="icon-cidcon_similarity builder__nav__item__icon"></i>
               <div class="builder__nav__item__textwrap">
                 <h4 class="label builder__nav__label">Similarity map</h4>
-                {{#link-to 'visualization' entity_and_id 'products' 'similarity' (query-params variable='null' endDate=2014 startDate=2013) class="builder__nav__question"}}
+                {{#link-to 'visualization' entity_and_id 'products' 'similarity' (query-params variable='null' endDate=2013 startDate=2012) class="builder__nav__question"}}
                   {{t 'graph_builder.builder_nav.location.products.similarity' name=name}}
                 {{/link-to}}
               </div>
@@ -254,7 +254,7 @@
               <i class="icon-cidcon_scatter builder__nav__item__icon"></i>
               <div class="builder__nav__item__textwrap">
                 <h4 class="label builder__nav__label">Scatterplot</h4>
-                {{#link-to 'visualization' entity_and_id 'industries' 'scatter' (query-params variable='null') class="builder__nav__question"}}
+                {{#link-to 'visualization' entity_and_id 'industries' 'scatter' (query-params variable='null' endDate=2014 startDate=2013) class="builder__nav__question"}}
                   {{t 'graph_builder.builder_nav.location.industries.scatter' name=name}}
                 {{/link-to}}
               </div>
@@ -274,7 +274,7 @@
     {{/ivy-tab-panel}}
 
     {{#ivy-tab-panel classNames='tabmod__card' activeClass='tabmod__card--is--active'}}
-      <p>Occupation data is only available at the national level. <a class="link--inactive" href="#">View the Graph Builder for Colombia.</a></p>
+      <p>Occupation data is only available at the national level. <a class="link--inactive" href="#">View the Graph Builder for Mexico.</a></p>
     {{/ivy-tab-panel}}
   {{/ivy-tabs}}
 </div>
