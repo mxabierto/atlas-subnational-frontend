@@ -11,7 +11,7 @@ export default {
     'similarity': 'Similarity map'
   },
   'side_nav': {
-    'brand_slogan': 'Using data to keep Colombia competitive',
+    'brand_slogan': 'Using data to keep Mexico competitive',
     'search_link': 'Search',
     'profile_link': 'Profile',
     'graph_builder_link': 'Graph Builder'
