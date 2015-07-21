@@ -32,8 +32,8 @@ export default DS.Model.extend({
     var defaultParams = {
       treemap: { variable: 'export_value', startDate: 2009, endDate: 2013 },
       multiples: { variable: 'export_value', startDate: 2009, endDate: 2013 },
-      scatter: { variable: null,  startDate: 2012, endDate: 2012 },
-      similarty: { variable: null,  startDate: 2013, endDate: 2014 }
+      scatter: {  startDate: 2012, endDate: 2013 },
+      similarty: {  startDate: 2013, endDate: 2014 }
     };
     return Ember.RSVP.all([products, productsData])
       .then((array) => {
@@ -61,8 +61,8 @@ export default DS.Model.extend({
     var defaultParams = {
       treemap: { variable: 'wages', startDate: 2009, endDate: 2013 },
       multiples: { variable: 'wages', startDate: 2009, endDate: 2013 },
-      scatter: { variable: null,  startDate: 2012, endDate: 2013 },
-      similarty: { variable: null,  startDate: 2013, endDate: 2014 }
+      scatter: {  startDate: 2012, endDate: 2013 },
+      similarty: {  startDate: 2013, endDate: 2014 }
     };
     return Ember.RSVP.all([industries, industriesData])
       .then((array) => {
