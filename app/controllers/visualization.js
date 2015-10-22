@@ -316,7 +316,7 @@ export default Ember.Controller.extend({
     } else if(visualization === 'multiples') {
       return 'small-multiples-set';
     } else if(visualization === 'scatter') {
-      return 'd3plus-scatter';
+      return 'vistk-scatter';
     } else if(visualization === 'similarity') {
       return 'd3plus-network';
     } else if (visualization === 'geo') {
