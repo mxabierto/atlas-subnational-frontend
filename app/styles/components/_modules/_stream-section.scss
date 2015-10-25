@@ -16,13 +16,12 @@
 }
 
 .section__head {
-  font-size: $fontXLarge;
-  line-height: $fontXLarge;
+  font-size: $fontLarge;
+  line-height: $fontLarge;
   margin-bottom: $baseSpace;
-  font-family: $sansAlt;
   -moz-osx-font-smoothing: grayscale;
+  
 }
-
 .section__head--spacey {
   margin-bottom: $baseSpace;
 }
