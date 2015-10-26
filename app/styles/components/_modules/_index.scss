@@ -204,6 +204,8 @@
 }
 
 .index__featuredin__item {
+  font-size: $fontTiny;
+  font-weight: 700;
   text-align: center;
   padding: 0 $baseSpace/2;
   flex: 1;
@@ -217,6 +219,7 @@
 
 .index__featuredin__img {
   width: 100%;
+  max-width: 140px;
 }
 
 // Crystal ball questions
@@ -238,6 +241,7 @@
 
 .index__questions__wrap {
   margin: 0 auto;
+  max-width: 100rem;
 }
 
 .index__topics__list {

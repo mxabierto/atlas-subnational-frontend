@@ -52,4 +52,3 @@ export default Ember.Controller.extend({
     return `pageheader.search_placeholder`;
   })
 });
-

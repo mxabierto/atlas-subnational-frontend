@@ -19,20 +19,13 @@ export default Ember.Route.extend({
     var request = [];
 
     if(transition.filter === 'location'){
-<<<<<<< HEAD
-      request = [locations];
-=======
       request = [country, department, msa, municipality];
->>>>>>> 3b026d7fdf30a2d58c05eee3f89ed7aa3f1f13b0
     } else if(transition.filter === 'industry') {
       request = [industriesDivision, industriesClass];
     } else if(transition.filter === 'product') {
       request = [products];
-<<<<<<< HEAD
-=======
     } else {
       request = [industriesDivision, industriesClass, country, department, msa, municipality, products];
->>>>>>> 3b026d7fdf30a2d58c05eee3f89ed7aa3f1f13b0
     }
 
     if(transition.query) {
@@ -61,4 +54,3 @@ export default Ember.Route.extend({
     }
   }
 });
-

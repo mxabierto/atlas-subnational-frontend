@@ -204,52 +204,5 @@
         </li>
       </ul>
     </section>
-<<<<<<< HEAD
-=======
-    <div class="index__viewmod">
-      <section class="index__section index__view__wrap">
-        <img src="assets/img/index/profiles_1_large.jpg" srcset="assets/img/index/profiles_1_med.jpg, assets/img/index/profiles_1_large.jpg 2x" alt="Icon for the Profiles view" class="index__view__img">
-        <div class="index__view__copy">
-          <h3 class="section__head">{{ t 'index.profiles_head' }}</h3>
-          <p class="section__p">{{ t 'index.profiles_subhead' }}</p>
-          {{#link-to 'location.show' 206
-            data-home-page-location=''
-            class='btn btn--standalone btn--stream'
-          }}
-            {{ t 'index.profiles_cta' }}
-          {{/link-to}}
-        </div>
-      </section>
-      <section class="index__section index__view__wrap">
-        <img src="assets/img/index/graph_builder_1_large.jpg" srcset="assets/img/index/graph_builder_1_med.jpg, assets/img/index/graph_builder_1_large.jpg 2x" alt="Icon for the Graph Builder view" class="index__view__img">
-        <div class="index__view__copy">
-          <h3 class="section__head">{{ t 'index.builder_head' }}</h3>
-          <p class="section__p">{{ t 'index.builder_subhead' }}</p>
-          {{#link-to
-            'visualization' 'product-87' 'locations' 'multiples' (query-params endDate=2013 startDate=2008 variable='export_value')
-            data-home-page-product=''
-            class="btn btn--standalone btn--stream"
-          }}
-            {{ t 'index.builder_cta' }}
-          {{/link-to}}
-        </div>
-      </section>
-    </div>
-    <section class="stream__section recirc">
-      <div class="recirc__bground" style="background-image: url(assets/img/hero_images/location/COL.jpg)"></div>
-      <div class="recirc__wrap">
-        <h3 class="section__head recirc__head">
-          {{t 'index.colombia_profile'}}
-        </h3>
-        {{#link-to
-          'location.show' 0
-          data-home-page-industry-question='2'
-          class="btn btn--standalone btn--stream"
-        }}
-          {{ t 'pageheader.profile_link' }}
-        {{/link-to}}
-      </div>
-    </section>
->>>>>>> 3b026d7fdf30a2d58c05eee3f89ed7aa3f1f13b0
   </article>
 </main>
