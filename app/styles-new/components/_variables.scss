@@ -1,0 +1,163 @@
+/**
+*
+* Color palette
+*
+**/
+
+/* ==========  Type Palette  ========== */
+$icon: 'FontAwesome';
+$sans: 'Circular', arial, sans-serif;
+$serif: 'Plantin', 'Times New Roman', Times, Georgia, serif;
+$sansAlt: 'Platform Web', 'Arial Black', arial, sans-serif;
+$open: 'Open Sans', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+
+
+/* ==========  Color Palettes  ========== */
+
+$odGreen: #00cc99;
+$odGrayLight: #F6F6F6;
+$odGrayMed: #E9E5E5;
+$odGrayMedDark: #BABABA;
+
+$colorBlack: rgb( 25, 25, 20 );
+$colorGrayDark: rgb( 83, 83, 79 );
+$colorGray: rgb( 140, 140, 138 );
+$colorGrayLight: rgb( 198, 198, 196 );
+$colorGrayLighter: rgb( 221, 221, 220 );
+$colorGrayLightest: rgb( 232, 232, 232 );
+$colorWhite: rgb( 255, 255, 255 );
+
+// Accents/highlights
+$colorRed: rgb( 238, 64, 54 );
+$colorGreen: rgb( 238, 252, 206 );
+
+// Scales
+$colorBrown: rgb( 153, 131, 115 );
+$colorBrown900: rgb( 163, 143, 129 );
+$colorBrown800: rgb( 173, 156, 143 );
+$colorBrown700: rgb( 184, 168, 157 );
+$colorBrown600: rgb( 194, 181, 171 );
+$colorBrown500: rgb( 204, 193, 185 );
+$colorBrown400: rgb( 214, 205, 199 );
+$colorBrown300: rgb( 224, 218, 213 );
+$colorBrown200: rgb( 235, 230, 227 );
+$colorBrown100: rgb( 245, 243, 241 );
+
+// UI Red
+$colorRed900: #ef534a;
+$colorRed800: #f1665e;
+$colorRed700: #f37972;
+$colorRed600: #f48c86;
+$colorRed500: #f69f9a;
+$colorRed400: #f8b2ae;
+$colorRed300: #f9c5c2;
+$colorRed200: #fbd8d6;
+$colorRed100: #fdebea;
+
+// Color scale red
+$colorRedScale1000: #f26d65;
+$colorRedScale900: #f37c75;
+$colorRedScale800: #f58a84;
+$colorRedScale700: #f69994;
+$colorRedScale600: #f7a8a4;
+$colorRedScale500: #f9b7b3;
+$colorRedScale400: #fac6c3;
+$colorRedScale300: #fbd5d3;
+$colorRedScale200: #fde4e2;
+$colorRedScale100: #fef3f2;
+
+$colorNavy200: rgb( 204, 204, 214 );
+$colorNavy400: rgb( 154, 153, 172 );
+$colorNavy600: rgb( 103, 102, 131 );
+$colorNavy800: rgb( 53, 51, 89 );
+$colorNavy: rgb( 2, 0, 48 );
+
+
+// Diverging scales, TODO: Flesh out
+$colorPink: rgb( 212, 175, 185 );
+$colorPink500:rgb( 229, 212, 213 );
+$colorBlue: rgb( 156, 173, 207 );
+$colorBlue500:rgb( 192, 214, 230 );
+
+// Unused but saved here in case we decide to use more navy and need the depth
+// $colorNavy100: rgb( 245, 243, 241 );
+// $colorNavy300: rgb( 224, 218, 213 );
+// $colorNavy500: rgb( 204, 193, 185 );
+// $colorNavy700: rgb( 184, 168, 157 );
+// $colorNavy900: rgb( 163, 143, 129 );
+
+// Weak red
+// $colorRed1000: #f26d65;
+// $colorRed900: #f37c75;
+// $colorRed800: #f58a84;
+// $colorRed700: #f69994;
+// $colorRed600: #f7a8a4;
+// $colorRed500: #f9b7b3;
+// $colorRed400: #fac6c3;
+// $colorRed300: #fbd5d3;
+// $colorRed200: #fde4e2;
+// $colorRed100: #fef3f2;
+
+/* ==========  Breakpoints  ========== */
+
+$small: 38rem !default;
+$medium: 62rem !default;
+$large: 80rem !default;
+$huge: 160rem !default;
+
+
+/* ==========  Fonts  ========== */
+
+// Icon font family
+$fontIcon: 'icons' !default;
+
+// Defining font sizes
+$fontXTiny: 1rem !default;
+$fontTiny: 1.3rem !default;
+$fontSmall: 1.6rem  !default;
+$fontBase: 2rem !default;
+$fontLarge: 2.6rem !default;
+$fontXLarge: 4.2rem !default;
+$fontXXLarge: 6.8rem !default;
+$fontHuge: 11rem !default;
+
+
+// Decremented font sizes for making x-heights match across typefaces
+$fontXTiny-decrement: 0.95rem !default;
+$fontTiny-decrement: 1.25rem !default;
+$fontSmall-decrement: 1.5rem  !default;
+$fontBase-decrement: 1.9rem !default;
+$fontLarge-decrement: 2.5rem !default;
+$fontXLarge-decrement: 4.1rem !default;
+$fontXXLarge-decrement: 6.7rem !default;
+$fontHuge-decrement: 10.9rem !default;
+
+/* ==========  Spacing  ========== */
+
+$baseSpace: 2.6rem !default;
+
+
+/* ==========  Animation  ========== */
+
+$animationTime: 0.2s;
+$animationEasing: cubic-bezier(0.455, 0.030, 0.515, 0.955) !default;
+
+
+/* ==========  Layout  ========== */
+
+$sidebarWidth: 15%;
+$minBuildermodHeight: 60rem;
+$buildermodHeight: 60vh;
+
+/* ==========  Z-index  ========== */
+
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;

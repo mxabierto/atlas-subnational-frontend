@@ -1,0 +1,202 @@
+/**
+*
+* Buildermod Drawer
+*
+**/
+
+.buildermod--is--open--settings {
+  .buildermod__drawer--settings {
+    display: block;
+  }
+  .buildermod__tool--settings {
+    background: $colorBrown300;
+    border-left-color: $colorBrown300;
+    .tool__btn__icon:before {
+      content: $fa-var-remove;
+    }
+  }
+  .buildermod__tool--changegraph {
+    border-left-color: $colorBrown300;
+  }
+  .buildermod__vizwrap {
+    border-width: 0;
+    overflow-y: auto;
+  }
+  .buildermod__viz {
+    display: none;
+  }
+}
+
+.buildermod--is--open--changegraph {
+  .buildermod__drawer--changegraph {
+    display: block;
+  }
+  .buildermod__tool--changegraph {
+    background: $colorBrown300;
+    border-left-color: $colorBrown300;
+    .tool__btn__icon:before {
+      content: $fa-var-remove;
+    }
+  }
+  .buildermod__vizwrap {
+    border-width: 0;
+    overflow-y: auto;
+  }
+  .buildermod__viz {
+    display: none;
+  }
+}
+
+.buildermod--is--open--questions {
+  .buildermod__drawer--questions {
+    display: block;
+  }
+  .buildermod__tool--questions {
+    background: $colorBrown300;
+    border-left-color: $colorBrown300;
+    .tool__btn__icon:before {
+      content: $fa-var-remove;
+    }
+  }
+  .buildermod__vizwrap {
+    border-width: 0;
+    overflow-y: auto;
+  }
+  .buildermod__viz {
+    display: none;
+  }
+}
+
+.buildermod__drawer {
+  background: $colorBrown300;
+  position: absolute;
+  z-index: $zIndex-2;
+  left: 0;
+  right: 0;
+  top: 0;
+  min-height: 100%;
+  padding: $baseSpace * 1.5;
+  display: none;
+}
+
+
+// Settings drawer
+
+.settings__input__wrap {
+  margin-bottom: $baseSpace;
+  &:last-of-type {
+    padding-bottom: $baseSpace * 2;
+    border-bottom: 1px solid $colorBrown500;
+  }
+}
+
+.settings__input {
+  margin-bottom: $baseSpace * 2;
+  line-height: 100%;
+}
+
+.settings__btn--close {
+  float: right;
+}
+
+
+
+// Change Graph drawer
+
+.changegraph__radioswrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+}
+
+.changegraph__radiowrap {
+  width: 33.3333%;
+  width: calc(100% / 3);
+  &:nth-of-type(3n+1) {
+    padding: 0 $baseSpace*0.75 $baseSpace 0;
+  }
+  &:nth-of-type(3n+2) {
+    padding: 0 $baseSpace*0.5 $baseSpace $baseSpace*0.25;
+  }
+  &:nth-of-type(3n) {
+    padding: 0 0 $baseSpace $baseSpace*0.75;
+  }
+  &:nth-child(n+3) {
+    padding-bottom: 0;
+  }
+}
+
+.changegraph__radio {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.changegraph__radio__target {
+  min-height: $baseSpace*9;
+  width: 100%;
+  pointer-events: none;
+  text-align: center;
+  line-height: 120%;
+  background: $colorBrown200;
+  color: $colorGrayLight;
+  display: flex;
+  align-items: center;
+}
+
+.changegraph__radio--is--possible {
+  background: $colorBrown500;
+  color: $colorGray;
+  pointer-events: all;
+  cursor: pointer;
+  &:hover {
+    background: $colorBrown500;
+    color: $colorBlack;
+  }
+}
+
+.changegraph__radio__target--checked {
+  color: $colorBlack;
+  &:hover {
+    background: $colorBrown500;
+  }
+}
+
+.changegraph__copy__wrap {
+  display: block;
+  margin: 0 auto;
+}
+
+.changegraph__subhead--is--available .changegraph__graph__description{
+  &:nth-of-type(1) {
+    display: block;
+  }
+  &:nth-of-type(2) {
+    display: none;
+  }
+}
+
+.changegraph__icon {
+  display: block;
+  font-size: $fontXLarge;
+  margin: 0 auto $baseSpace/2;
+}
+
+.changegraph__graph__head {
+  margin-bottom: $baseSpace/4;
+  display: block;
+}
+
+.changegraph__graph__description {
+  font-family: $serif;
+  font-size: $fontSmall;
+  &:nth-of-type(1) {
+    display: none;
+  }
+  &:nth-of-type(2) {
+    display: block;
+  }
+}
+

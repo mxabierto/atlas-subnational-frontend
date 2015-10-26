@@ -1,0 +1,29 @@
+/**
+*
+* Link
+*
+**/
+
+a {
+  transition: color 0s $animationEasing;
+}
+
+.link--stream {
+  color: $odGreen;
+  &:hover, &:focus, &:active {
+    color: $colorBlack;
+  }
+}
+
+.link--stream--inline--small {
+  font-size: $fontSmall-decrement;
+}
+
+.link--stream--inline--tiny {
+  font-size: $fontTiny-decrement;
+}
+
+.link--inactive {
+  color: $colorGrayLighter;
+  pointer-events: none;
+}

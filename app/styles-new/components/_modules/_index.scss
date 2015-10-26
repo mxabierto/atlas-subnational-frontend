@@ -1,0 +1,272 @@
+/**
+*
+* Index
+*
+**/
+
+.index {
+  background: $odGrayLight;
+}
+
+.index__section {
+  max-width: 100rem;
+}
+
+.index__header__wrap {
+  background: $colorWhite url('/assets/img/acem/bg.png');
+  background-size: 100%;
+}
+.index__header {
+  width: 100%;
+  padding: $baseSpace * 2;
+  margin: 0 auto;
+}
+
+.stream__head.index__head {
+  margin-bottom: $baseSpace;
+  max-width: 100rem;
+  color: $colorWhite;
+}
+
+.index__search__wrap {
+  width: 50rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+// Views
+
+.index__viewmod {
+  @include clearfix;
+  z-index: $zIndex-1;
+}
+.index__viewmod .section__head, .index__viewmod .section__p {
+	color: $colorWhite;
+}
+.index__view__wrap {
+  width: 50%;
+  background: $colorBrown300;
+  padding: $baseSpace;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+.index__view__wrap:nth-child(1) {
+	background: rgb(71,71,71);
+}
+.index__view__wrap:nth-child(2) {
+	background: rgb(98,98,98);
+}
+
+.index__view__img {
+  max-width: 16rem;
+  max-height: 16rem;
+  box-shadow: 1px 1px 5px $colorBlack;
+  
+}
+
+.index__view__copy {
+  padding: $baseSpace;
+}
+
+// Complexity figure
+
+.index__complexity__mod {
+  padding: 0 $baseSpace * 3;
+}
+
+.index__complexity__wrap {
+  max-width: 80.6rem;
+  margin: 0 auto;
+  display: flex;
+}
+.section__complexity .section__head {
+	color: $odGreen;
+}
+.section__complexity__graph {
+  position: relative;
+  display: none;
+}
+
+.section__complexity__copy {
+  background: $colorWhite;
+  padding: $baseSpace;
+  margin: $baseSpace * 2 $baseSpace;
+
+}
+
+.section__complexity__bar {
+  position: absolute;
+  bottom: 0;
+  width: $baseSpace * 1.5;
+  background: $colorBrown500;
+  &:before {
+    font-size: $fontTiny;
+    position: absolute;
+    top: -2rem;
+    width: $baseSpace * 1.5;
+    text-align: center;
+  }
+}
+
+.section__complexity__bar--wef {
+  top: 84.5304%;
+  // &:before {
+  //   content: '2.8%';
+  // }
+}
+
+.section__complexity__bar--complexity {
+  top: 0;
+  left: $baseSpace * 2.5;
+  // &:before {
+  //   content: '18.1%';
+  // }
+}
+
+.index__complexity__figure__wrap {
+  background: $colorBrown300;
+  padding: $baseSpace * 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index__figure__wrap {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: $baseSpace;
+  border-right: 1px solid $colorBrown500;
+  align-content: center;
+}
+
+.index__figure__head {
+  width: 100%;
+  margin-bottom: $baseSpace;
+  max-width: 40rem;
+}
+
+.index__figure {
+  width: 50%;
+  &:first-of-type {
+    padding-right: $baseSpace;
+  }
+  &:last-of-type {
+    padding-left: $baseSpace;
+  }
+}
+
+.index__figure__bignum{
+  font-size: $fontHuge;
+  letter-spacing: -2px;
+  line-height: 100%;
+}
+
+.index__cta__wrap {
+  width: 40%;
+  padding-left: $baseSpace;
+}
+
+.index__complexity__cta {
+  margin-bottom: $baseSpace * 2;
+}
+
+// Research featured in media grid
+.index__featuredin__wrap {
+  background: $colorBrown300;
+  padding: $baseSpace * 2;
+}
+.index__featuredin__wrap h3 {
+	font-size: $fontSmall;
+	margin-bottom: 0.5rem;
+	font-weight: 300;
+}
+.index__featuredin__list {
+  display: flex;
+  align-items: center;
+}
+
+.index__featuredin__item {
+  text-align: center;
+  padding: 0 $baseSpace/2;
+  flex: 1;
+  &:first-of-type {
+    padding: 0 $baseSpace 0 0;
+  }
+  &:last-of-type {
+    padding-right: 0 0 0 $baseSpace;
+  }
+}
+
+.index__featuredin__img {
+  width: 100%;
+}
+
+// Crystal ball questions
+
+.index__questions__mod {
+  padding: 0 $baseSpace * 3;
+  margin-bottom: $baseSpace * 3;
+}
+
+.index__questions__mod p.section__p {
+	text-align: center;
+	max-width: none;
+}
+
+.index__questions__mod h3.section__head {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.index__questions__wrap {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.index__topics__list {
+  display: flex;
+  align-items: center;
+}
+
+.index__topics__item__wrap {
+  width: 33.33333%;
+  background: $colorBrown300;
+  &:first-of-type {
+    margin-right: $baseSpace;
+  }
+  &:nth-of-type(2) {
+    margin: 0 $baseSpace/2;
+  }
+  &:nth-of-type(3) {
+    margin-left: $baseSpace;
+  }
+}
+
+.index__topics__image {
+  width: 100%;
+}
+
+.index__topics__item {
+  padding: $baseSpace;
+  background: $colorWhite;
+}
+
+.index__questions__item {
+  margin-bottom: $baseSpace / 2;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.index__questions__link {
+  font-size: $fontSmall;
+  display: block;
+}
+
+.index__recirc {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: $baseSpace*3 $baseSpace*3 $baseSpace*3 15%;
+  background: $colorBrown300;
+}

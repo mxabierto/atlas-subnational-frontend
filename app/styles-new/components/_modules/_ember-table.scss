@@ -1,0 +1,69 @@
+/**
+*
+* Ember table
+* Overriding the default styles for ember-table. Tears.
+*
+**/
+
+.ember__table__wrap {
+  position: relative;
+}
+
+.ember-table-tables-container {
+  background: $odGrayLight;
+  border: none;
+  margin-bottom: $baseSpace / 2;
+}
+
+.ember-table-header-row, .ember-table-header-container .ember-table-table-fixed-wrapper {
+  background: $odGrayMed;
+}
+
+.ember-table-header-cell {
+  background: inherit;
+  text-align: left;
+}
+
+.ember-table-header-container {
+  box-shadow: none;
+  border-width: 0;
+}
+
+.ember-table-content {
+  font-size: $fontSmall;
+}
+
+.ember-table-color-marker {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+  border: 1px solid $colorGray;
+}
+
+.ember-table-header-cell .ember-table-content-container .ember-table-content {
+  font-weight: 300;
+  padding: $baseSpace/2 $baseSpace/2;
+  position: initial;
+  white-space: nowrap;
+}
+
+.ember-table-body-container .ember-table-content, .ember-table-footer-container .ember-table-content {
+  padding: $baseSpace/2 $baseSpace/2;
+}
+
+.ember-table-cell {
+  border-right: 1px solid $colorWhite;
+  &:last-of-type {
+    border-right: none;
+  }
+}
+
+.ember-table-table-row {
+  border-bottom: 1px solid $colorWhite;
+}
+
+.ember-table-hover div {
+  background: $colorBrown100;
+}

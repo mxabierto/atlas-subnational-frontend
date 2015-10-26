@@ -1,0 +1,60 @@
+/**
+*
+* Button
+*
+**/
+
+button::-moz-focus-inner {
+  border:0;
+  padding:0;
+}
+
+.btn {
+  transition: color $animationTime $animationEasing;
+  padding: $baseSpace/2 $baseSpace;
+  font-size: $fontSmall;
+  cursor: pointer;
+  font-weight: 700;
+  &:active, &:focus {
+    outline: 0;
+  }
+}
+
+.btn--standalone {
+  transition: color $animationTime $animationEasing, background $animationTime $animationEasing;
+  display: inline-block;
+  @include offset-text;
+}
+
+.btn--stream, .btn--search, .btn--buildermod {
+  background: $odGreen;
+  color: $colorWhite;
+  &:hover, &:active, &:focus {
+    background: $colorWhite;
+	color: $odGreen;
+  }
+}
+
+.btn--buildermod {
+  background: $odGrayMed;
+  color: #222;
+  &:hover, &:active, &:focus {
+    background: $odGreen;
+	color: $colorWhite;
+  }
+}
+
+
+.btn--search {
+	text-transform: uppercase;
+}
+
+.btn--cta {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $baseSpace / 2;
+}

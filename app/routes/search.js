@@ -14,11 +14,11 @@ export default Ember.Route.extend({
     var request = [industriesDivision, industriesClass, locations, products];
 
     if(transition.filter === 'location'){
-      request = [locations]
+      request = [locations];
     } else if(transition.filter === 'industry') {
-      request = [industriesDivision, industriesClass,]
+      request = [industriesDivision, industriesClass];
     } else if(transition.filter === 'product') {
-      request = [products]
+      request = [products];
     }
 
     if(transition.query) {

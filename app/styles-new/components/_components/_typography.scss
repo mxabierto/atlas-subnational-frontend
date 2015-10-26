@@ -1,0 +1,25 @@
+/**
+*
+* Typography
+* Include any type styles applied across all pages that don't deserve a component
+*
+**/
+
+body {
+  font-size: $fontBase;
+  font-weight: 500;
+  color: $colorGrayDark;
+  font-family: $open;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+  color: $colorBlack;
+}
+
+
+li > p {
+  padding-top: 0;
+}
+

@@ -1,0 +1,54 @@
+/**
+*
+* Stream header
+*
+**/
+
+.stream__img--hero {
+  max-width: 100%;
+  width: 100%;
+  opacity: 0.75;
+}
+
+.stream__header {
+  position: relative;
+}
+
+.stream__header--builder {
+  text-align: left;
+}
+
+.stream__head {
+  font-size: 36px;
+  margin-bottom: $baseSpace * 3;
+  letter-spacing: -2px;
+  line-height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222;
+}
+
+.stream__subhead {
+  margin-bottom: $baseSpace;
+  font-weight: 500;
+  color: $colorWhite;
+}
+
+.breadcrumb {
+  display: inline-block;
+  margin-right: $baseSpace / 2;
+  &:after {
+    content: '/';
+    margin-left: $baseSpace / 2;
+    color: $colorGray;
+  }
+  &:last-of-type {
+    margin-right: 0;
+    &:after {
+      content: '';
+    }
+  }
+}
+
+.breadcrumb__link {
+  color: $colorGray;
+}
