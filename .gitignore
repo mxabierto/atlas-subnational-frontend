@@ -18,5 +18,5 @@ testem.log
 
 .env
 
-.screenlog*
+screenlog*
 .DS_Store
