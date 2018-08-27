@@ -24,7 +24,7 @@ ADD . $PROJECT_SOURCE
 # Genera proyecto
 RUN npm install -g ember-cli
 RUN rm -rf /usr/share/nginx/html/
-RUN ember build --output-path=$NGINX_STATICS
+RUN ember build --environment production --output-path=$NGINX_STATICS
 
 WORKDIR $NGINX_STATICS
 RUN rm -rf $PROJECT_SOURCE
